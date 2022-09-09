@@ -1,0 +1,12 @@
+#pragma once
+#include "Animal.hpp"
+
+class Dog: public Animal
+{
+	public:
+	Dog ();
+	Dog (const Dog& doge);
+	Dog operator= (const Dog& doge);
+	~Dog ();
+	void makeSound (void) const;
+};
