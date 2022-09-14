@@ -43,5 +43,5 @@ void Animal::setType (std::string type)
 
 void Animal::makeSound (void) const
 {
-	std::cout << "Fuck off you stupid animal" << std::endl;
+	std::cout << "*undefined sound*" << std::endl;
 };
