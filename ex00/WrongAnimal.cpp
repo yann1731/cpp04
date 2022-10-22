@@ -32,7 +32,7 @@ void WrongAnimal::setType (std::string type)
 	this->type = type;
 };
 
-std::string WrongAnimal::getType (void)
+const std::string WrongAnimal::getType (void)
 {
 	return (this->type);
 };

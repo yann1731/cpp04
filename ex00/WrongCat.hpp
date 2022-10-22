@@ -10,7 +10,7 @@ class WrongCat: public WrongAnimal
 	WrongCat operator= (const WrongCat& wrongcat);
 	virtual void makeSound (void);
 	void setType(std::string type);
-	std::string getType(void);
+	const std::string getType(void);
 
 	protected:
 	std::string type;
