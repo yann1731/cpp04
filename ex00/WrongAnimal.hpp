@@ -7,9 +7,9 @@ class WrongAnimal
 	public:
 	WrongAnimal ();
 	WrongAnimal (std::string type);
-	WrongAnimal (const WrongAnimal& wrongAnimal);
-	WrongAnimal operator= (const WrongAnimal& wrongAnimal);
-	virtual void makeSound (void);
+	WrongAnimal (const WrongAnimal& wronganimal);
+	WrongAnimal operator= (const WrongAnimal& wronganimal);
+	virtual void makeSound (void) const;
 	void setType(std::string type);
 	std::string getType(void);
 
