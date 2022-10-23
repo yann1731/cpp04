@@ -23,7 +23,7 @@ WrongCat WrongCat::operator= (const WrongCat& wrongcat)
     return (newWrongCat);
 };
 
-void WrongCat::makeSound (void)
+void WrongCat::makeSound (void) const
 {
     std::cout << "What does the capybara say??" << std::endl; 
 };
