@@ -1,5 +1,6 @@
 #pragma once
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 // Default constructor
 // Copy constructor
@@ -14,4 +15,6 @@ class Cat: public Animal
 	Cat operator= (const Cat& cat);
 	~Cat ();
 	void makeSound (void) const;
+	private:
+	Brain *catBrain;
 };
