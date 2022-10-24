@@ -22,11 +22,6 @@ WrongAnimal WrongAnimal::operator= (const WrongAnimal& wronganimal)
 	return (newanimal);
 };
 
-void WrongAnimal::makeSound (void) const
-{
-	std::cout << "vroom vroom, wtf this is not an animal" << std::endl;
-};
-
 void WrongAnimal::setType (std::string type)
 {
 	this->type = type;
