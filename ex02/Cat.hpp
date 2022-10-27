@@ -11,10 +11,11 @@ class Cat: public Animal
 {
 	public:
 	Cat ();
+	Cat (const std::string& type);
 	Cat (const Cat& cat);
 	Cat operator= (const Cat& cat);
 	~Cat ();
-	virtual void makeSound (void) const;
+	void makeSound (void) const;
 	private:
 	Brain *brain;
 };

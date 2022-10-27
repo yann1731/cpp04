@@ -7,6 +7,13 @@ Cat::Cat ()
 	std::cout << "Cat default constructor called" << std::endl;
 };
 
+Cat::Cat (const std::string& type)
+{
+	this->type = type;
+	this->brain = new Brain;
+	std::cout << "cat type constructor called" << std::endl;
+};
+
 Cat::Cat (const Cat& cat)
 {
 	this->type = cat.type;

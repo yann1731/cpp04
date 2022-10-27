@@ -8,11 +8,11 @@ class Animal
 	Animal();
 	Animal(const std::string& type);
 	Animal(const Animal& animal);
-	Animal operator= (const Animal& animal);
+	// Animal operator= (const Animal& animal);
 	virtual ~Animal();
 	std::string getType(void) const;
 	void setType(const std::string type);
-	virtual void makeSound (void) = 0;
+	virtual void makeSound (void) const = 0;
 
 	protected:
 	std::string type;

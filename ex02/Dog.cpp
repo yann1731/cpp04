@@ -7,6 +7,13 @@ Dog::Dog ()
 	this->brain = new Brain;
 };
 
+Dog::Dog (const std::string& type)
+{
+	this->type = type;
+	this->brain = new Brain;
+	std::cout << "dog type constructor called";
+};
+
 Dog::Dog (const Dog& doge)
 {
 	std::cout << "Dog copy constructor called" << std::endl;
