@@ -29,6 +29,7 @@ Animal Animal::operator= (const Animal& animal)
 Animal::~Animal ()
 {
 	std::cout << "Animal default destructor called" << std::endl;
+	return ;
 };
 
 std::string Animal::getType (void) const

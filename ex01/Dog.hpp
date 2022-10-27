@@ -9,7 +9,7 @@ class Dog: public Animal
 	Dog (const Dog& doge);
 	Dog operator= (const Dog& doge);
 	~Dog ();
-	void makeSound (void) const;
+	virtual void makeSound (void) const;
 	private:
-	Brain *dogBrain;
+	Brain *brain;
 };

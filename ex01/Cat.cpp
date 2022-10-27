@@ -2,31 +2,31 @@
 
 Cat::Cat ()
 {
-	std::cout << "Cat default constructor called" << std::endl;
 	this->type = "Cat";
-	this->catBrain = new Brain;
+	this->brain = new Brain;
+	std::cout << "Cat default constructor called" << std::endl;
 };
 
 Cat::Cat (const Cat& cat)
 {
-	std::cout << "Cat copy assignment constructor called" << std::endl;
 	this->type = cat.type;
-	this->catBrain = new Brain;
+	this->brain = new Brain;
+	std::cout << "Cat copy assignment constructor called" << std::endl;
 };
 
 Cat Cat::operator= (const Cat& cat)
 {
-	std::cout << "Cat = operator overload called" << std::endl;
 	Cat newCat;
 	newCat.type = cat.type;
-	newCat.catBrain = new Brain;
+	newCat.brain = new Brain;
+	std::cout << "Cat = operator overload called" << std::endl;
 	return (newCat);
 };
 
 Cat::~Cat ()
 {
+	delete(this->brain);
 	std::cout << "Cat default destructor called" << std::endl;
-	delete(this->catBrain);
 };
 
 void Cat::makeSound (void) const
