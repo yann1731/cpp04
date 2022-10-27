@@ -22,14 +22,14 @@ WrongAnimal WrongAnimal::operator= (const WrongAnimal& wronganimal)
 	return (newanimal);
 };
 
-void WrongAnimal::makeSound (void) const
-{
-	std::cout << "vroom vroom, wtf this is not an animal" << std::endl;
-};
-
 void WrongAnimal::setType (std::string type)
 {
 	this->type = type;
+};
+
+void WrongAnimal::makeSound () const
+{
+	std::cout << "quack quack" << std::endl;
 };
 
 const std::string WrongAnimal::getType (void)
