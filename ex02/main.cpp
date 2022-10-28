@@ -9,8 +9,14 @@ int main(void)
 	//Animal *animalFarm[8];
 
 	Cat grisou("grisou");
+	Cat newGrisou = grisou;
+	Dog borky;
+	Dog otherBorky(borky);
 
 	std::cout << grisou.getType() << std::endl;
+	grisou.makeSound();
+	borky.makeSound();
+	otherBorky.makeSound();
 
 	// for (int i = 0; i < 8; i++)
 	// {
